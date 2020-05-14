@@ -46,7 +46,8 @@ passport.deserializeUser(User.deserializeUser());
 //=================
 //
 //=================
-mongoose.connect("mongodb://localhost/yelp_camp"); //mongoDb connection string
+// mongoose.connect("mongodb://localhost/yelp_camp"); //mongoDb connection string
+mongoose.connect("mongodb+srv://admin:cgpa8.0000@cluster0-cl0cp.mongodb.net/test?retryWrites=true&w=majority");
 app.use(express.static('public'));   //Serves the public directory
 console.log(__dirname +'/public');
 app.use(bodyParser.urlencoded({extended: true}));//For Parsing URL encoded data (req.body.___)
