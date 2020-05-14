@@ -1,0 +1,27 @@
+/* body{
+    background: purple;
+} */
+nav{
+    margin-bottom: 20px !important;
+}
+#index_row{
+    margin-bottom: 20px;
+}
+#show_image{
+    height: 30rem;
+}
+.delete_form{
+    display: inline;
+}
+.comment_text{
+    margin-top: 7px;
+    margin-bottom: 0em;
+    padding: 0em;
+}
+
+#comment_card{
+    padding-bottom: 6px !important;
+}
+/* #show_page_space{
+    margin-bottom: 3em;
+} */

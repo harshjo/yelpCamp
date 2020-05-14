@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/landing.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" async></script>
+    <title>YelpCamp</title>
+</head>
+<body>
+    <div class="container">
+        <% if (success && success.length > 0) { %>
+            <div class="alert alert-error" role="alert">
+                <%= error %> 
+            </div>
+        <% } %>
+        <% if (success && success.length > 0) { %>
+            <div class="alert alert-success" role="alert">
+                <%= success %> 
+            </div>
+        <% } %>
+        <div class="landing-header">
+            <h1>Welcome to YelpCamp!</h1>
+            <a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+        </div>
+        <ul class="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
