@@ -41,8 +41,13 @@ router.post("/login",
     passport.authenticate("local",
     {
         successRedirect: "/campgrounds", 
-        failureRedirect: "/login"
+        failureRedirect: "/login",
+        failureFlash: true,
+        // failureMessage: 'Wrong Id or Password!'
     }), (req, res)=>{
+        // if(failureFlash) {
+        //     req.flash('error', failureMessage)
+        // }
 });
 
 //Logout Route
