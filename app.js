@@ -47,8 +47,9 @@ passport.deserializeUser(User.deserializeUser());
 //
 //=================
 //console.log(process.env.DATABASEURL);
-mongoose.connect(process.env.DATABASEURL); //mongoDb connection string
-//mongoose.connect("mongodb+srv://admin:cgpa8.0000@cluster0-cl0cp.mongodb.net/test?retryWrites=true&w=majority");
+// mongoose.connect(process.env.DATABASEURL); //mongoDb connection string
+// mongoose.connect('mongodb://localhost/yelp_camp')
+mongoose.connect("mongodb+srv://admin:cgpa8.0000@cluster0-cl0cp.mongodb.net/test?retryWrites=true&w=majority");
 app.use(express.static('public'));   //Serves the public directory
 //console.log(__dirname +'/public');
 app.use(bodyParser.urlencoded({extended: true}));//For Parsing URL encoded data (req.body.___)
